@@ -1,0 +1,199 @@
+{
+  "menueitem": [
+    {
+      "title": "User Management",
+      "edit": true,
+      "permissionKey": true,
+      "subSection": [
+        {
+          "title": "Carriers",
+          "remove": true,
+          "edit": true,
+          "permissionKey": true,
+          "subSection": [
+            {
+              "title": "Policies",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            },
+            {
+              "title": "Trucks",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            },
+            {
+              "title": "Trailers",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            },
+            {
+              "title": "Locations",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            },
+            {
+              "title": "Drivers",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true,
+              "subSection": [
+                {
+                  "title": "Active",
+                  "hasAction": false,
+                  "remove": true,
+                  "edit": true,
+                  "permissionKey": true
+                },
+                {
+                  "title": "Terminated",
+                  "hasAction": false,
+                  "remove": true,
+                  "edit": true,
+                  "permissionKey": true
+                }
+              ]
+            },
+            {
+              "title": "Violations/Inspections",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            },
+            {
+              "title": "Carrier Documents",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            },
+            {
+              "title": "IFTA",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            },
+            {
+              "title": "Users",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            },
+            {
+              "title": "Notes",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            }
+          ]
+        },
+        {
+          "title": "Drivers",
+          "remove": true,
+          "edit": true,
+          "permissionKey": true,
+          "subSection": [
+            {
+              "title": "Violations/Inspections",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            },
+            {
+              "title": "Driver’s Documents",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            },
+            {
+              "title": "Incidents",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            },
+            {
+              "title": "Education",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            },
+            {
+              "title": "Employment",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true,
+              "employment": [
+                {
+                  "title": "Transportation",
+                  "hasAction": false,
+                  "remove": true,
+                  "edit": true,
+                  "permissionKey": true
+                },
+                {
+                  "title": "Other",
+                  "hasAction": false,
+                  "remove": true,
+                  "edit": true,
+                  "permissionKey": true
+                }
+              ]
+            },
+            {
+              "title": "Notes",
+              "hasAction": false,
+              "remove": true,
+              "edit": true,
+              "permissionKey": true
+            }
+          ]
+        },
+        {
+          "title": "Agents",
+          "hasAction": false,
+          "remove": true,
+          "edit": true,
+          "permissionKey": true,
+          "subSection": []
+        },
+        {
+          "title": "Shippers",
+          "hasAction": false,
+          "remove": false,
+          "edit": false,
+          "permissionKey": false,
+          "subSection": []
+        },
+        {
+          "title": "Lessors",
+          "hasAction": false,
+          "remove": false,
+          "edit": false,
+          "permissionKey": false
+        }
+      ],
+      "root": {
+        "title": "User Management Section",
+        "mainTitle": true,
+        "permissionKey": "userManagementSection"
+      }
+    }
+  ]
+}
