@@ -1,12 +1,14 @@
-// import Accordion from 'react-bootstrap/Accordion';
-
-import Slidebar from "./Slidebar"
+import { Provider } from "react-redux"
+import ParentElement from "./ParentElement"
+import Store from '../store/Store'
 
 function Main(){
 return(
     <>
-    <header style={{backgroundColor:'black' , height:'50px'}}/>
-    <Slidebar/>
+    <Provider store={Store}>
+    <header className="header"/>
+    <ParentElement/>
+    </Provider>
     </>
 )
 }

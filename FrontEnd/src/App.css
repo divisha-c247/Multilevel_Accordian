@@ -41,3 +41,37 @@
   border :0px;
 background-color: transparent;
 }
+.header{
+  background-color: black;
+  height: 50px;
+}
+.container-main{
+  border:2px solid black;
+  margin-top: 30px;
+}
+
+.margintop{
+margin-top: 20px;
+}
+.accordion-header button{
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  width: 100%;
+}
+.accordion-header button:focus{
+  
+  outline: none;
+  text-decoration: underline;
+}
+.subcomponent{
+  margin-left: 26px;
+}
+.switch{
+  float: right;
+}
+.centre{
+  margin: auto;
+  align-items: center;
+  align-self: center;
+}

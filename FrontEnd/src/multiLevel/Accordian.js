@@ -1,50 +1,28 @@
 import Accordion from "react-bootstrap/Accordion";
-import Permission from "./Permisson";
-import { Container,Table } from "react-bootstrap";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { useDispatch } from "react-redux";
+import { Roles } from "../store/slice/Slice";
 
-function AccordionFN({item,index}){
+function AccordionFN({ item, index  }) {
+  const dispatch = useDispatch()
+  return (
+    <>
+      <Accordion key={index} className='accordion' >
+        <Accordion.Item eventKey={index} className='accordion-item' >
 
-    return(<>
-    <Row>
-     <Col sm={4}>  
-     <Accordion key={index}>
-        <Accordion.Item eventKey={index}>
-          <Accordion.Header>{item.title}</Accordion.Header>
+          <Accordion.Header  className='accordion-header' onClick={()=>{dispatch(Roles(item))}}>{item.title}</Accordion.Header>
           <Accordion.Body>
-           
-          {item.subSection?.map((subitem, index1) => {
-                  return (<>
-                   <AccordionFN item={subitem} index={index1}/>
-                   <Col sm={8}>
-        <Container>
-      <Table>
-        <thead>
-          <tr>
-            <th>Permission Name</th>
-            <th></th>
-            <th>ADD/EDIT</th>
-            <th>Delete</th>
-          </tr>
-        </thead>
-        <Permission Menuitem={subitem}/>
-      </Table>
-      
-    </Container>
-    </Col>
-                  
-                   </>
-                  );
-                })}
-                 
+            {item.subSection?.map((subitem, index1) => {
+            
+              return (
+                <div className="subcomponent">
+                  <AccordionFN  item={subitem} index={index1}/>
+                </div>
+              );
+            })}
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
-      </Col> 
-    </Row>
-    
-      </>
-    )
+    </>
+  );
 }
-export default AccordionFN
+export default AccordionFN;

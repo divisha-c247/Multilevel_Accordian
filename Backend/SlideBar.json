@@ -1,6 +1,6 @@
 {
   "menueitem": [
-    {
+    {  
       "title": "User Management",
       "edit": true,
       "permissionKey": true,

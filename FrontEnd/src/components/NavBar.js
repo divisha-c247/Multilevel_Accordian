@@ -7,7 +7,7 @@ function Navbar () {
  
    
   const Selector = useSelector( state => state.Role)
-  console.log(Selector)
+
     return (
       <>
         { (Selector ==='SuperAdmin'||Selector ==='Admin') &&<div>
